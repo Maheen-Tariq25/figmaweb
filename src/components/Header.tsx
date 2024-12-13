@@ -51,7 +51,7 @@ export default function topHeader() {
 
     {/* <!-- Navigation Links --> */}
     <nav className="flex space-x-[20px] text-[14px] font-medium text-gray-600">
-      <Link href="http://localhost:3000/home">Home</Link>
+      <Link href="http://localhost:3000">Home</Link>
       <Link href="http://localhost:3000/about">About</Link>
       <Link href="http://localhost:3000/shop">Shop</Link>
       <Link href="http://localhost:3000/contact-us">Contact Us</Link>
