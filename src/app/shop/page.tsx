@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import '@fortawesome/fontawesome-free/css/all.css';
 
 export default function HeroSection() {
   return ( <div><div className="bg-white py-16">
@@ -98,21 +98,24 @@ export default function HeroSection() {
     <h4 className="text-3xl font-bold text-gray-800">Trusted By Over 4000 Big Companies</h4>
     
 
-    {/* Logos Section */}
-    <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-      {/* Company 1 */}
-      <img src="/icon1.png" alt="Company 1" className="h-12 mx-auto" />
-      {/* Company 2 */}
-      <img src="/icon2.png" alt="Company 2" className="h-12 mx-auto" />
-      {/* Company 3 */}
-      <img src="/icon3.png" alt="Company 3" className="h-12 mx-auto" />
-      {/* Company 4 */}
-      <img src="/icon4.png" alt="Company 4" className="h-12 mx-auto" />
-      {/* Company 5 */}
-      <img src="/icon5.png" alt="Company 5" className="h-12 mx-auto" />
-      {/* Company 6 */}
-      <img src="/icon6.png" alt="Company 6" className="h-12 mx-auto" />
-    </div>
+{/* Logos Section */}
+
+
+<div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+  {/* Company 1 */}
+  <Image src="/icon1.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
+  {/* Company 2 */}
+  <Image src="/icon2.png" alt="Company 2" width={48} height={48} className="h-12 mx-auto" />
+  {/* Company 3 */}
+  <Image src="/icon3.png" alt="Company 3" width={48} height={48} className="h-12 mx-auto" />
+  {/* Company 4 */}
+  <Image src="/icon4.png" alt="Company 4" width={48} height={48} className="h-12 mx-auto" />
+  {/* Company 5 */}
+  <Image src="/icon5.png" alt="Company 5" width={48} height={48} className="h-12 mx-auto" />
+  {/* Company 6 */}
+  <Image src="/icon6.png" alt="Company 6" width={48} height={48} className="h-12 mx-auto" />
+</div>
+
   </div>
   </section>
                                   {/* Section 3 */}
@@ -130,7 +133,16 @@ export default function HeroSection() {
     {/* FAQ Item */}
     <div className="space-y-2">
       <p className="flex items-start text-gray-900 font-semibold">
-        <img src="/icon10.png" alt="Arrow Icon" className="w-4 h-4 mr-2" />
+      
+
+<Image 
+  src="/icon10.png" 
+  alt="Arrow Icon" 
+  width={16} 
+  height={16} 
+  className="mr-2" 
+/>
+
         the quick fox jumps over the lazy dog
       </p>
       <p className="text-gray-500 text-sm">
@@ -140,7 +152,16 @@ export default function HeroSection() {
     {/* Repeat FAQ Item for all six entries */}
     <div className="space-y-2">
       <p className="flex items-start text-gray-900 font-semibold">
-        <img src="/icon10.png" alt="Arrow Icon" className="w-4 h-4 mr-2" />
+
+
+<Image 
+  src="/icon10.png" 
+  alt="Arrow Icon" 
+  width={16} 
+  height={16} 
+  className="mr-2" 
+/>
+
         the quick fox jumps over the lazy dog
       </p>
       <p className="text-gray-500 text-sm">
@@ -149,7 +170,16 @@ export default function HeroSection() {
     </div>
     <div className="space-y-2">
       <p className="flex items-start text-gray-900 font-semibold">
-        <img src="/icon10.png" alt="Arrow Icon" className="w-4 h-4 mr-2" />
+    
+
+<Image 
+  src="/icon10.png" 
+  alt="Arrow Icon" 
+  width={16} 
+  height={16} 
+  className="mr-2" 
+/>
+
         the quick fox jumps over the lazy dog
       </p>
       <p className="text-gray-500 text-sm">
@@ -158,7 +188,15 @@ export default function HeroSection() {
     </div>
     <div className="space-y-2">
       <p className="flex items-start text-gray-900 font-semibold">
-        <img src="/icon10.png" alt="Arrow Icon" className="w-4 h-4 mr-2" />
+     
+
+<Image 
+  src="/icon10.png" 
+  alt="Arrow Icon" 
+  width={16} 
+  height={16} 
+  className="mr-2" 
+/>
         the quick fox jumps over the lazy dog
       </p>
       <p className="text-gray-500 text-sm">
@@ -167,7 +205,16 @@ export default function HeroSection() {
     </div>
     <div className="space-y-2">
       <p className="flex items-start text-gray-900 font-semibold">
-        <img src="/icon10.png" alt="Arrow Icon" className="w-4 h-4 mr-2" />
+    
+
+<Image 
+  src="/icon10.png" 
+  alt="Arrow Icon" 
+  width={16} 
+  height={16} 
+  className="mr-2" 
+/>
+
         the quick fox jumps over the lazy dog
       </p>
       <p className="text-gray-500 text-sm">
@@ -176,7 +223,16 @@ export default function HeroSection() {
     </div>
     <div className="space-y-2">
       <p className="flex items-start text-gray-900 font-semibold">
-        <img src="/icon10.png"alt="Arrow Icon" className="w-4 h-4 mr-2" />
+      
+
+<Image 
+  src="/icon10.png" 
+  alt="Arrow Icon" 
+  width={16} 
+  height={16} 
+  className="mr-2" 
+/>
+
         the quick fox jumps over the lazy dog
       </p>
       <p className="text-gray-500 text-sm">
@@ -210,20 +266,48 @@ export default function HeroSection() {
   {/* <!-- Social Media Icons Section --> */}
   <div className="flex space-x-6">
     <a href="#" aria-label="Twitter" className="text-gray-500 hover:text-blue-600">
-      <img src="/icon14.png" alt="Twitter" className="w-6 h-6" />
+  
+
+<Image 
+  src="/icon14.png" 
+  alt="Twitter" 
+  width={24} 
+  height={24} 
+  
+/>
+
     </a>
     <a href="#" aria-label="Facebook" className="text-gray-500 hover:text-blue-600">
-      <img src="/icon11.png" alt="Facebook" className="w-6 h-6" />
+    
+
+<Image 
+  src="/icon14.png" 
+  alt="Facebook" 
+  width={24} 
+  height={24} 
+/>
+
     </a>
     <a href="#" aria-label="Instagram" className="text-gray-500 hover:text-blue-600">
-      <img src="/icon12.png" alt="Instagram" className="w-6 h-6" />
+     
+<Image 
+  src="/icon14.png" 
+  alt="Instagram" 
+  width={24} 
+  height={24} 
+/>
+
     </a>
     <a href="#" aria-label="LinkedIn" className="text-gray-500 hover:text-blue-600">
-      <img src="/icon13.png" alt="LinkedIn" className="w-6 h-6" />
+      
+<Image 
+  src="/icon14.png" 
+  alt="LinkedIn" 
+  width={24} 
+  height={24} 
+/>
     </a>
   </div>
 </div>
 </div>
-
-  
   )}

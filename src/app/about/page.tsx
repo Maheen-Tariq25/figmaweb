@@ -1,7 +1,7 @@
 import Image from "next/image";
+import '@fortawesome/fontawesome-free/css/all.css';
 
-
-export default function HeroSection() {
+const HeroSection = () => {
   return (
     <div>
  <section className="bg-white py-16 relative">
@@ -20,13 +20,18 @@ export default function HeroSection() {
 
         {/* Right Image */}
         <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center relative">
-          <img
-            src="/pic19.png"
-            alt="Shopping bags"
-            className="w-full max-w-md rounded-md z-10"
-          />
+
+
+<Image
+  src="/pic19.png"
+  alt="Shopping bags"
+  width={500} // Specify width
+  height={500} // Specify height
+  className="w-full max-w-md rounded-md z-10"
+/>
+
           {/* Background Bubble */}
-          <div className="absolute top-20 left- w-96 h-96 bg-pink-100 rounded-full z-0"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-pink-100 rounded-full z-0"></div>
           <div className="absolute top-0 -left-16 w-40 h-40 bg-purple-100 rounded-full z-0"></div>
         </div>
       </div>
@@ -79,37 +84,40 @@ export default function HeroSection() {
   </div>
 </section>
                                          {/*Section 4  */}
-                                         <section className="bg-white py-12">
-      <div className="max-w-screen-xl mx-auto px-6 text-center">
-        {/* Video Container */}
-        <div className="relative overflow-hidden rounded-lg shadow-lg max-w-4xl mx-auto">
-          <img
-            src="/video.png"
-            alt="Video Thumbnail"
-            className="w-full object-cover"
-          />
-          {/* Play Button */}
-          <button
-            className="absolute inset-0 flex items-center justify-center"
-            aria-label="Play Video"
-          >
-            <div className="bg-blue-500 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-lg hover:bg-blue-600 transition">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M6.267 4.455A1 1 0 017.6 4.94l7.07 5.06a1 1 0 010 1.637l-7.07 5.06a1 1 0 01-1.333-1.484L13.197 10 6.267 5.94a1 1 0 01-.267-1.485z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </div>
+     <section className="bg-white py-12">
+     <div className="relative overflow-hidden rounded-lg shadow-lg max-w-4xl mx-auto">
+  
+
+<Image 
+  src="/video.png" 
+  alt="Video Thumbnail" 
+  width={1920} // Replace with the actual width of your image
+  height={1080} // Replace with the actual height of your image
+  className="object-cover" 
+  layout="responsive" 
+/>
+
+  <button
+    className="absolute inset-0 flex items-center justify-center"
+    aria-label="Play Video"
+  >
+    <div className="bg-blue-500 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-lg hover:bg-blue-600 transition">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-8 w-8"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M6.267 4.455A1 1 0 017.6 4.94l7.07 5.06a1 1 0 010 1.637l-7.07 5.06a1 1 0 01-1.333-1.484L13.197 10 6.267 5.94a1 1 0 01-.267-1.485z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+
     </section>                                  
                                                     {/* Section 5 */}
 
@@ -127,11 +135,16 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Member 1 */}
           <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
-            <img
-              src="/pic20.png"
-              alt="Team Member"
-              className="w-32 h-32  object-cover shadow-md"
-            />
+
+
+<Image 
+  src="/pic20.png" 
+  alt="Team Member" 
+  width={128} 
+  height={128} 
+  className="object-cover shadow-md" 
+/>
+
             <h3 className="mt-4 text-lg font-semibold text-gray-900">Lisanne</h3>
             <p className="text-sm text-gray-500">Photographer</p>
             {/* Social Links */}
@@ -150,11 +163,16 @@ export default function HeroSection() {
 
           {/* Member 2 */}
           <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
-            <img
-              src="/pic21.png"
-              alt="Team Member"
-              className="w-32 h-32 object-cover shadow-md"
-            />
+       
+
+<Image 
+  src="/pic21.png" 
+  alt="Team Member" 
+  width={128} 
+  height={128} 
+  className="object-cover shadow-md" 
+/>
+
             <h3 className="mt-4 text-lg font-semibold text-gray-900">Emma</h3>
             <p className="text-sm text-gray-500">Editor</p>
             {/* Social Links */}
@@ -173,11 +191,16 @@ export default function HeroSection() {
 
           {/* Member 3 */}
           <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6">
-            <img
-              src="/pic22.png"
-              alt="Team Member"
-              className="w-32 h-32 object-cover shadow-md"
-            />
+      
+
+<Image 
+  src="/pic22.png" 
+  alt="Team Member" 
+  width={128} 
+  height={128} 
+  className="object-cover shadow-md" 
+/>
+
             <h3 className="mt-4 text-lg font-semibold text-gray-900">Damien</h3>
             <p className="text-sm text-gray-500">Developer</p>
             {/* Social Links */}
@@ -197,7 +220,7 @@ export default function HeroSection() {
       </div>
     </section>
                                            {/* Section 6 */}
-                                           <section className="bg-gray-50 py-16">
+     <section className="bg-gray-50 py-16">
   <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
     {/* Title Section */}
     <h3 className="text-3xl font-bold text-gray-800">Big Companies Are Here</h3>
@@ -208,17 +231,24 @@ export default function HeroSection() {
     {/* Logos Section */}
     <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
       {/* Company 1 */}
-      <img src="/icon1.png" alt="Company 1" className="h-12 mx-auto" />
+      <Image
+  src="/icon1.png"
+  alt="Company 1"
+  width={48} // Set appropriate width
+  height={48} // Set appropriate height
+  className="mx-auto"
+/>
+
       {/* Company 2 */}
-      <img src="/icon2.png" alt="Company 2" className="h-12 mx-auto" />
+      <Image src="/icon2.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
       {/* Company 3 */}
-      <img src="/icon3.png" alt="Company 3" className="h-12 mx-auto" />
+      <Image src="/icon3.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
       {/* Company 4 */}
-      <img src="/icon4.png" alt="Company 4" className="h-12 mx-auto" />
+      <Image src="/icon4.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
       {/* Company 5 */}
-      <img src="/icon5.png" alt="Company 5" className="h-12 mx-auto" />
+      <Image src="/icon5.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
       {/* Company 6 */}
-      <img src="/icon6.png" alt="Company 6" className="h-12 mx-auto" />
+      <Image src="/icon6.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
     </div>
   </div>
 </section>
@@ -237,20 +267,23 @@ export default function HeroSection() {
         The gradual accumulation of information about atomic and small-scale
         behavior during the first quarter of the 20th century.
       </p>
-      <button className="px-6 py-3 border bg-blue-600 text-white font-semibold rounded-md shadow-sm hover:bg-gray-100">
+      <button className="px-6 py-3 border bg-blue-600 text-white font-semibold rounded-md shadow-sm">
         Button
       </button>
     </div>
 
     {/* Right Section */}
     <div className="flex justify-center">
-      <img
-        src="/pic23.png"
-        alt="Woman"
-        className="rounded-lg object-cover w-full max-w-md lg:max-w-full"
-      />
-    </div>
+  <Image 
+    src="/pic23.png" 
+    alt="Woman" 
+    width={768} // Replace with actual width of your image
+    height={512} // Replace with actual height of your image
+    className="rounded-lg object-cover" 
+  />
+</div>
   </div>
 </section>
           </div>
   )}
+  export default HeroSection;

@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 export default function HeroSection() {
   return (
@@ -77,11 +78,14 @@ export default function HeroSection() {
 
     {/* <!-- Accessories Card --> */}
     <div className="relative group h-[280px]">
-      <img
-        src="pic4.jpg"
-        alt="Accessories"
-        className="w-[415px] h-[280px] object-cover"
-      />
+<Image
+  src="/pic4.jpg"  // Ensure the image is in the public directory
+  alt="Accessories"
+  width={415}       // Set the width in pixels
+  height={280}      // Set the height in pixels
+  className="object-cover"  // Tailwind class for styling
+/>
+
       <div
         className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
       >
@@ -95,11 +99,15 @@ export default function HeroSection() {
 
     {/* <!-- Kids Card --> */}
     <div className="relative group h-[280px]">
-      <img
-        src="pic5.jpg"
-        alt="Kids"
-        className="w-[415px] h-[280px] object-cover"
-      />
+  
+<Image
+  src="/pic5.jpg"  // Make sure the image is in the public directory
+  alt="Kids"
+  width={415}       // Set the width in pixels
+  height={280}      // Set the height in pixels
+  className="object-cover"  // Tailwind class for styling
+/>
+
       <div
         className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
       >
@@ -147,11 +155,15 @@ export default function HeroSection() {
 
     {/* Repeat for Other Cards */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="pic7.jpg"
-        alt="Product 2"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+
+<Image
+  src="/pic7.jpg"  // Ensure the image is in the public directory
+  alt="Product 2"
+  width={500}       // Set the width in pixels
+  height={400}      // Set the height in pixels
+  className="object-cover rounded-[8px] mb-[16px]"  // Tailwind class for styling
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">Graphic Design</h3>
       <p className="text-[14px] text-gray-500 leading-[18px] text-center mb-[12px]">English Department</p>
       <div className="flex items-center space-x-2 mb-[12px]">
@@ -168,11 +180,15 @@ export default function HeroSection() {
 
     {/* Card 3 */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="pic8.jpg"
-        alt="Product 3"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+   
+<Image
+  src="/pic8.jpg"  // Ensure the image is in the public directory
+  alt="Product 3"
+  width={500}       // Set the width in pixels
+  height={400}      // Set the height in pixels
+  className="object-cover rounded-[8px] mb-[16px]"  // Tailwind class for styling
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">Graphic Design</h3>
       <p className="text-[14px] text-gray-500 leading-[18px] text-center mb-[12px]">English Department</p>
       <div className="flex items-center space-x-2 mb-[12px]">
@@ -189,11 +205,15 @@ export default function HeroSection() {
 
     {/* Card 4 */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="pic9.jpg"
-        alt="Product 4"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+
+<Image
+  src="/pic9.jpg"  // Ensure the image is in the public directory
+  alt="Product 4"
+  width={500}       // Set the width in pixels
+  height={400}      // Set the height in pixels
+  className="object-cover rounded-[8px] mb-[16px]"  // Tailwind class for styling
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">Graphic Design</h3>
       <p className="text-[14px] text-gray-500 leading-[18px] text-center mb-[12px]">English Department</p>
       <div className="flex items-center space-x-2 mb-[12px]">
@@ -217,11 +237,15 @@ export default function HeroSection() {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[24px] max-w-[1200px] mx-auto px-4">
     {/* Card 1 */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="/pic10.png"
-        alt="Product 1"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+
+<Image
+  src="/pic10.png"  // Ensure the image is in the public directory
+  alt="Product 1"
+  width={500}        // Set the width in pixels
+  height={400}       // Set the height in pixels
+  className="object-cover rounded-[8px] mb-[16px]"  // Tailwind class for styling
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">
         Graphic Design
       </h3>
@@ -242,11 +266,15 @@ export default function HeroSection() {
 
     {/* Repeat for Other Cards */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="/pic11.png"
-        alt="Product 2"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+    
+<Image
+  src="/pic11.png"  // Ensure the image is in the public directory
+  alt="Product 2"
+  width={500}        // Set the width in pixels
+  height={400}       // Set the height in pixels
+  className="object-cover rounded-[8px] mb-[16px]"  // Tailwind class for styling
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">
         Graphic Design
       </h3>
@@ -267,11 +295,15 @@ export default function HeroSection() {
 
     {/* Card 3 */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="/pic12.png"
-        alt="Product 3"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+
+<Image
+  src="/pic12.png"  // Ensure the image is in the public directory
+  alt="Product 3"
+  width={500}        // Set the width in pixels
+  height={400}       // Set the height in pixels
+  className="object-cover rounded-[8px] mb-[16px]"  // Tailwind class for styling
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">
         Graphic Design
       </h3>
@@ -292,11 +324,16 @@ export default function HeroSection() {
 
     {/* Card 4 */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="/pic13.png"
-        alt="Product 4"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+    import Image from 'next/image';
+
+<Image
+  src="/pic13.png"  // Ensure the image is in the public directory
+  alt="Product 4"
+  width={500}        // Set the width in pixels
+  height={400}       // Set the height in pixels
+  className="object-cover rounded-[8px] mb-[16px]"  // Tailwind class for styling
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">
         Graphic Design
       </h3>
@@ -341,11 +378,15 @@ export default function HeroSection() {
 
     {/* <!-- Right Image --> */}
     <div className="lg:w-1/2 mt-8 lg:mt-0">
-      <img
-        src="/pic14.png"
-        alt="Product Image"
-        className="max-w-full rounded-lg"
-      />
+
+<Image
+  src="/pic14.png"  // Ensure the image is in the public directory
+  alt="Product Image"
+  width={500}        // Set the width in pixels (adjust as needed)
+  height={500}       // Set the height in pixels (adjust as needed)
+  className="max-w-full rounded-lg"  // Tailwind class for styling
+/>
+
     </div>
   </div>
 </section>
@@ -365,11 +406,15 @@ export default function HeroSection() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Card 1 */}
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img
-          src="/pic16.png"
-          alt="Colorful houses"
-          className="w-full h-48 object-cover"
-        />
+
+<Image
+  src="/pic16.png"  // Ensure the image is in the public directory
+  alt="Colorful houses"
+  width={500}        // Set the width in pixels (adjust as needed)
+  height={192}       // Set the height in pixels (adjust based on the aspect ratio)
+  className="object-cover"  // Tailwind class for styling
+/>
+
         <div className="p-6">
           <span className="text-xs uppercase font-bold text-red-500">New</span>
           <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L'intégral)</h3>
@@ -391,11 +436,14 @@ export default function HeroSection() {
 
       {/* Card 2 */}
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img
-          src="/pic17.png"
-          alt="Pink car"
-          className="w-full h-48 object-cover"
-        />
+<Image
+  src="/pic17.png"  // Ensure the image is in the public directory
+  alt="Pink car"
+  width={500}        // Set the width in pixels (adjust as needed)
+  height={192}       // Set the height in pixels (adjust based on the aspect ratio)
+  className="object-cover"  // Tailwind class for styling
+/>
+
         <div className="p-6">
           <span className="text-xs uppercase font-bold text-red-500">New</span>
           <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L'intégral)</h3>
@@ -417,11 +465,15 @@ export default function HeroSection() {
 
       {/* Card 3 */}
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img
-          src="/pic18.png"
-          alt="Colorful umbrellas"
-          className="w-full h-48 object-cover"
-        />
+
+<Image
+  src="/pic18.png"  // Ensure the image is in the public directory
+  alt="Colorful umbrellas"
+  width={500}        // Set the width in pixels (adjust as needed)
+  height={192}       // Set the height in pixels (adjust based on the aspect ratio)
+  className="object-cover"  // Tailwind class for styling
+/>
+
         <div className="p-6">
           <span className="text-xs uppercase font-bold text-red-500">New</span>
           <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L'intégral)</h3>
@@ -446,5 +498,4 @@ export default function HeroSection() {
 
 
  </div>
-  );
-}
+  );}
