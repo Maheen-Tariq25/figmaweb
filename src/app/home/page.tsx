@@ -22,11 +22,15 @@ export default function HeroSection() {
  
      {/* <!-- Right Image --> */}
      <div className="mt-8 md:mt-0 md:w-[50%]">
-  <img
-    src="/pic1.png"
-    alt="New Collection"
-    className=" w-full max-w-[500px] mx-auto object-contain"
-  />
+   <Image
+  src="/pic1.png" // Path to the image in the public folder
+  alt="New Collection"
+  width={500} // Specify width
+  height={500} // Specify height (or adjust to maintain aspect ratio)
+  className="object-contain mx-auto"
+  style={{ maxWidth: '500px' }} // Set max-width via style if needed
+/>
+
 </div>
    </div>
  </section>
@@ -34,7 +38,7 @@ export default function HeroSection() {
  <section className="py-16 bg-white">
   {/* <!-- Section Title --> */}
   <div className="text-center mb-12">
-    <h2 className="text-[28px] font-bold">EDITOR'S PICK</h2>
+    <h2 className="text-[28px] font-bold">EDITOR&apos;S PICK</h2>
     <p className="text-gray-500 mt-2 text-[14px]">Problems trying to resolve the conflict between</p>
   </div>
 
@@ -42,11 +46,14 @@ export default function HeroSection() {
   <div className="grid grid-cols-4 gap-6 max-w-screen-lg mx-auto px-4">
     {/* <!-- Men Card --> */}
     <div className="relative group h-[280px]">
-      <img
-        src="/pic2.jpg"
-        alt="Men"
-        className="w-[415px] h-[280px] object-cover"
-      />
+  <Image
+  src="/pic2.jpg" // Ensure the image path is correct
+  alt="Men"
+  width={415} // Specify the width
+  height={280} // Specify the height
+  className="object-cover"
+/>
+
       <div
         className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
       >
@@ -60,11 +67,14 @@ export default function HeroSection() {
 
     {/* <!-- Women Card --> */}
     <div className="relative group h-[280px]">
-      <img
-        src="pic3.jpg"
-        alt="Women"
-        className="w-[415px] h-[280px] object-cover"
-      />
+   <Image
+  src="/pic3.jpg" // Ensure the path is correct
+  alt="Women"
+  width={415} // Specify the width
+  height={280} // Specify the height
+  className="object-cover"
+/>
+
       <div
         className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
       >
@@ -134,11 +144,14 @@ export default function HeroSection() {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[24px] max-w-[1200px] mx-auto px-4">
     {/* Card 1 */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-      <img
-        src="pic6.jpg"
-        alt="Product 1"
-        className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
-      />
+  <Image
+  src="/pic6.jpg"
+  alt="Product 1"
+  width={400} // Specify the width
+  height={400} // Specify the height
+  className="w-full h-[400px] object-cover rounded-[8px] mb-[16px]"
+/>
+
       <h3 className="text-[18px] font-medium leading-[22px] text-center mb-[8px]">Graphic Design</h3>
       <p className="text-[14px] text-gray-500 leading-[18px] text-center mb-[12px]">English Department</p>
       <div className="flex items-center space-x-2 mb-[12px]">
@@ -324,7 +337,6 @@ export default function HeroSection() {
 
     {/* Card 4 */}
     <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-    import Image from 'next/image';
 
 <Image
   src="/pic13.png"  // Ensure the image is in the public directory
@@ -417,9 +429,9 @@ export default function HeroSection() {
 
         <div className="p-6">
           <span className="text-xs uppercase font-bold text-red-500">New</span>
-          <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L'intégral)</h3>
+          <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L&apos;intégral)</h3>
           <p className="mt-2 text-gray-600 text-sm">
-            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+            We focus on ergonomics and meeting you where you work.It&apos;s only a keystroke away.
           </p>
           <div className="flex items-center justify-between mt-4 text-sm text-gray-500">
             <span>22 April 2021</span>
@@ -446,9 +458,10 @@ export default function HeroSection() {
 
         <div className="p-6">
           <span className="text-xs uppercase font-bold text-red-500">New</span>
-          <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L'intégral)</h3>
+          <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L&apos;intégral)</h3>
+        
           <p className="mt-2 text-gray-600 text-sm">
-            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+            We focus on ergonomics and meeting you where you work. It&apos;s only a keystroke away.
           </p>
           <div className="flex items-center justify-between mt-4 text-sm text-gray-500">
             <span>22 April 2021</span>
@@ -476,9 +489,11 @@ export default function HeroSection() {
 
         <div className="p-6">
           <span className="text-xs uppercase font-bold text-red-500">New</span>
-          <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L'intégral)</h3>
+          <h3 className="mt-2 text-lg font-semibold text-gray-900">Loudest à la Madison #1 (L&apos;intégral)
+          </h3>
           <p className="mt-2 text-gray-600 text-sm">
-            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+            We focus on ergonomics and meeting you where you work. It&apos;s only a keystroke away.
+
           </p>
           <div className="flex items-center justify-between mt-4 text-sm text-gray-500">
             <span>22 April 2021</span>
