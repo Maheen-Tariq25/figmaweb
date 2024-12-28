@@ -222,11 +222,11 @@ const HeroSection = () => {
                                            {/* Section 6 */}
      <section className="bg-gray-50 py-16">
   <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-    {/* Title Section */}
-    <h3 className="text-3xl font-bold text-gray-800">Big Companies Are Here</h3>
+    {/* <h3 className="text-3xl font-bold text-gray-800">Big Companies Are Here</h3>
     <p className="mt-4 text-lg text-gray-500">
       Trusted by leading companies to deliver world-class solutions.
-    </p>
+    </p> Title Section */}
+   
 
     {/* Logos Section */}
     <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
@@ -234,21 +234,21 @@ const HeroSection = () => {
       <Image
   src="/icon1.png"
   alt="Company 1"
-  width={48} // Set appropriate width
+  width={70} // Set appropriate width
   height={48} // Set appropriate height
   className="mx-auto"
 />
 
       {/* Company 2 */}
-      <Image src="/icon2.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
+      <Image src="/icon2.png" alt="Company 1" width={70} height={48} className="h-12 mx-auto" />
       {/* Company 3 */}
-      <Image src="/icon3.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
+      <Image src="/icon3.png" alt="Company 1" width={70} height={48} className="h-12 mx-auto" />
       {/* Company 4 */}
-      <Image src="/icon4.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
+      <Image src="/icon4.png" alt="Company 1" width={70} height={48} className="h-12 mx-auto" />
       {/* Company 5 */}
-      <Image src="/icon5.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
+      <Image src="/icon5.png" alt="Company 1" width={70} height={48} className="h-12 mx-auto" />
       {/* Company 6 */}
-      <Image src="/icon6.png" alt="Company 1" width={48} height={48} className="h-12 mx-auto" />
+      <Image src="/icon6.png" alt="Company 1" width={70} height={48} className="h-12 mx-auto" />
     </div>
   </div>
 </section>

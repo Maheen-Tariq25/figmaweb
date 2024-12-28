@@ -41,7 +41,6 @@ export default function topHeader() {
     </div>
   </div>
 </div>
-
 <header className="bg-white border-b border-gray-200">
   <div className="container mx-auto flex items-center justify-between h-[70px] px-[30px]">
     {/* <!-- Logo --> */}
@@ -50,10 +49,42 @@ export default function topHeader() {
     </div>
 
     {/* <!-- Navigation Links --> */}
-    <nav className="flex space-x-[20px] text-[14px] font-medium text-gray-600">
+    <nav className="flex space-x-[20px] text-[14px] font-medium text-gray-600 relative">
       <Link href="http://localhost:3000">Home</Link>
+      <div className="relative group">
+        <button className="flex items-center space-x-1 hover:text-blue-500 focus:outline-none">
+          Shop
+          <svg
+            className="w-4 h-4 transform transition-transform group-hover:rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        {/* Dropdown Menu */}
+        <ul className="absolute hidden group-hover:block group-focus-within:block bg-white border border-gray-200 rounded-lg shadow-lg mt-2 w-[150px]">
+          <li className="hover:bg-gray-100">
+            <Link href="http://localhost:3000/shop1" className="block px-4 py-2 text-gray-700 text-sm">
+              Shop 1
+            </Link>
+          </li>
+          <li className="hover:bg-gray-100">
+            <Link href="http://localhost:3000/shop2" className="block px-4 py-2 text-gray-700 text-sm">
+              Shop 2
+            </Link>
+          </li>
+        </ul>
+      </div>
       <Link href="http://localhost:3000/about">About</Link>
-      <Link href="http://localhost:3000/shop">Shop</Link>
+      <Link href="http://localhost:3000/blog">Blog</Link>
       <Link href="http://localhost:3000/contact-us">Contact Us</Link>
     </nav>
 
@@ -80,7 +111,6 @@ export default function topHeader() {
     </div>
   </div>
 </header>
-
 
 </div>
 
